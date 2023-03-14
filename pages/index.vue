@@ -1,5 +1,5 @@
 <template>
 	<Gallery />
 	<Features />
-	<LastJobs />
+	<LastJobsCarousel />
 </template>
