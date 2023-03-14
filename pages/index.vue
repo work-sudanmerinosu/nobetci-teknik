@@ -1,1 +1,5 @@
-<template></template>
+<template>
+	<Gallery />
+	<!-- <Features />
+	<LastJobs /> -->
+</template>
