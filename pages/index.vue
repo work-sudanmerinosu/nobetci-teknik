@@ -1,5 +1,7 @@
 <template>
-	<Gallery />
+	<Hero />
 	<Features />
 	<LastJobsCarousel />
+	<ContactUs />
+	<Footer />
 </template>

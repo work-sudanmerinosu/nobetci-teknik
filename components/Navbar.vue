@@ -26,7 +26,6 @@
 				target="_blank"
 			>
 				<Icon name="ic:baseline-location-on" />
-
 				Ahatlı mahallesi Ulusoy Cad. 96/A Kepez/Antalya
 			</a>
 		</div>
