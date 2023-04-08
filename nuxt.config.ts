@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
 	modules: ['@nuxt/image-edge', 'nuxt-icon'],
 	css: ['~/assets/css/main.css'],
+	extends: ['nuxt-seo-kit'],
 	app: {
 		head: {
 			title: 'Nöbetçi Teknik Servis',
@@ -25,6 +26,12 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			baseUrl: process.env.BACKEND_URL || 'http://localhost:1337/api',
+			siteUrl:
+				process.env.NUXT_PUBLIC_SITE_URL ||
+				'https://www.nobetciteknikservis.net',
+			siteName: 'Nöbetçi Teknik Servis',
+			siteDescription: 'Antalyadaki tüm teknik işleriniz için en iyisi.',
+			language: 'tr-TR',
 		},
 	},
 });
