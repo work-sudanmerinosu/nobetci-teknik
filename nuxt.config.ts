@@ -9,7 +9,8 @@ export default defineNuxtConfig({
 			meta: [
 				{
 					name: 'description',
-					content: 'Antalyadaki tüm teknik işleriniz için en iyisi.',
+					content:
+						"Nöbetçi Teknik Servisimiz Antalya'nın her yerinde evinizin ve iş yerinizin her türlü teknik ihtiyacında 7/24 kesintisiz hizmet vermektedir..",
 				},
 			],
 			htmlAttrs: {
@@ -30,7 +31,8 @@ export default defineNuxtConfig({
 				process.env.NUXT_PUBLIC_SITE_URL ||
 				'https://www.nobetciteknikservis.net',
 			siteName: 'Nöbetçi Teknik Servis',
-			siteDescription: 'Antalyadaki tüm teknik işleriniz için en iyisi.',
+			siteDescrption:
+				"Nöbetçi Teknik Servisimiz Antalya'nın her yerinde evinizin ve iş yerinizin her türlü teknik ihtiyacında 7/24 kesintisiz hizmet vermektedir..",
 			language: 'tr-TR',
 		},
 	},
