@@ -8,8 +8,8 @@
 			</h1>
 		</div>
 		<Carousel :autoplay="2000" :wrap-around="true">
-			<Slide v-for="slide in abbas" :key="slide">
-				<img :src="slide" class="carousel__item" />
+			<Slide v-for="image in works.images" :key="image">
+				<nuxt-img :src="image" class="carousel__item" />
 			</Slide>
 
 			<template #addons>
@@ -22,19 +22,16 @@
 <script setup lang="ts">
 	import { Carousel, Pagination, Slide } from 'vue3-carousel';
 	import 'vue3-carousel/dist/carousel.css';
-
-	const abbas = [
-		'https://dummyimage.com/1280x720',
-		'https://dummyimage.com/1280x720',
-		'https://dummyimage.com/1280x720',
-		'https://dummyimage.com/1280x720',
-		'https://dummyimage.com/1280x720',
-	];
+	const fetch = useAxiosFetch();
+	const works = await fetch.getWorks();
 </script>
 
 <style scoped>
 	.carousel__item {
 		min-height: 200px;
+		max-width: 1280px;
+		max-height: 720px;
+
 		width: 100%;
 		font-size: 20px;
 		border-radius: 8px;
