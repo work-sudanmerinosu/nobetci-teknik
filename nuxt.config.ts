@@ -4,7 +4,13 @@ export default defineNuxtConfig({
 	css: ['~/assets/css/main.css'],
 	app: {
 		head: {
-			title: 'Nöbetçi Teknik',
+			title: 'Nöbetçi Teknik Servis',
+			meta: [
+				{
+					name: 'description',
+					content: 'Antalyadaki tüm teknik işleriniz için en iyisi.',
+				},
+			],
 			htmlAttrs: {
 				lang: 'tr',
 			},
